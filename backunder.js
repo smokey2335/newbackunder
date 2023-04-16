@@ -34,7 +34,7 @@ if(typeof back!=="undefined" && back!==null){
   !(function(){
     var t;
     try{
-      const URL = window.location.href.split(/[#]/)[0];
+      const URL = top.location.href.split(/[#]/)[0];
       for(t=0; 10>t; ++t){
         history.pushState({}, '', URL+'#');
       }
